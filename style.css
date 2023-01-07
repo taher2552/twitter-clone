@@ -1,0 +1,606 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --blue: #147df5;
+    --light-blue: #e7e7e8;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+/* login page css */
+
+.box{
+    background-color: #eee;
+    width:100vw;
+    height: 100vh;
+}
+
+.box_container{
+    border:2px solid red;
+    width:60%;
+    margin:0 auto;
+    background-color: white;
+    height: 100vh;
+
+}
+
+.box_container i{
+    position: relative;
+    left:50%;
+    transform: translate(-50%);
+    font-size: 60px;
+    color:rgb(29, 155, 240);
+}
+
+.box_container h2{
+    text-align: center;
+}
+
+.sign_in_btn{
+    display: flex;
+    flex-direction: column;
+    width:40%;
+    margin:0 auto;
+    margin-top: 20px;
+}
+
+.sign_in_google{
+    margin-bottom: 20px;
+    
+}
+
+.sign_in_google, .sign_in_apple{
+    padding:12px;
+    background-color: transparent;
+    border:1px solid #eee;
+    border-radius: 50px;
+    position: relative;
+}
+
+svg{
+    position: absolute;
+    top:50%;
+    left:25%;
+    transform: translate(-25%,-50%);
+    height: 24px;
+    width:24px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+
+  }
+
+
+  
+  /* To show the lines on right 
+  and left sides of the text */
+  .divider::after,
+  .divider::before {
+    content: "";
+    border: 1px solid rgb(223, 218, 218);
+    flex: 1;
+  }
+
+  #sign_in_input{
+    border:1px solid rgb(223, 218, 218);
+    padding:12px;
+    outline: none;
+    margin-top: 40px;
+
+  }
+
+  .next{
+    
+
+    margin-top: 20px;
+    padding:12px;
+    background-color: black;
+    color:white;
+    border:none;
+    border-radius: 50px;
+  }
+
+  .forgot_pass{
+    margin-top: 20px;
+    padding:12px;
+    background-color: transparent;
+    border:1px solid rgb(223, 218, 218);
+    border-radius: 50px;
+  }
+
+  .guest_login{
+    text-decoration: none;
+    text-align: center;
+    margin-top: 20px;
+    color:black;
+  }
+
+  .guest_login:hover{
+    color:blue;
+    text-decoration: underline;
+  }
+
+
+/* LEFT SIDE */
+#left_part{
+    margin-left: 50px;
+    width:80%;
+    margin-right: -150px;
+}
+
+.logo a i{
+    color: var(--blue);
+    font-size: 30px;
+}
+
+.menu__icon{
+    font-size: 20px;
+    font-weight: 600;
+    width: fit-content;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.menu__icon.active a{
+    color: var(--blue);
+}
+
+.for_hover{
+    padding:12px;
+}
+
+.for_hover:hover{
+    background-color: var(--light-blue);
+    padding:12px;
+}
+.fa-twitter{
+ padding:20px;
+ margin-left: -10px;
+ margin-top: -15px;
+ 
+}
+.fa-twitter:hover{
+    background-color: #e8f5fd;
+    padding:20px;
+    border-radius: 200px;
+
+  
+}
+
+.menu__icon:hover a{
+    color: var(--blue);
+}
+
+.menu__icon a{
+    color: black;
+}
+
+.menu__icon i{
+    margin-right: 10px;
+}
+
+
+.left_part--top .fa-ellipsis-h{
+    font-size: 16px;
+    border: solid 3px black;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.menu__icon:hover .fa-ellipsis-h{
+    border: 3px solid var(--blue);
+}
+
+#left_part button{
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    width: 200px;
+    padding: 20px 40px;
+    margin-top: 15px;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#user:hover{
+    background-color: var(--light-blue);
+}
+
+#user img{
+    height: 50px;
+    width: 50px;
+    border: solid 1px black;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+#user .user__info{
+    margin: 0 30px 0 10px;
+}
+
+
+
+/* RIGHT SIDE */
+#right__side{
+    right: 0;
+    top: 0;
+    padding-right: 30px;
+    justify-content: flex-start;
+}
+
+#right__side form{
+    width: 90%;
+    max-width: 300px;
+    position: relative;
+    height: 50px;
+    margin: 10px;
+}
+
+#right__side form input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background-color: #edf2f4;
+    padding: 15px 30px;
+    border-radius: 50px;
+    padding-left: 50px;
+    font-size: 20px;
+}
+
+#right__side form .icon{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    color: #aaa;
+    font-size: 20px;
+}
+
+#right__side form input::placeholder{
+    font-size: 15px;
+}
+
+#right__side form input:focus{
+    background-color: white;
+    border: solid 2px var(--blue);
+}
+
+.trending{
+    width: 90%;
+    max-width: 300px;
+    background-color: #edf2f3;
+    border-radius: 10px;
+}
+
+.trend{
+    padding: 10px;
+    border: solid 1px #ccc;
+}
+
+.trend h5{
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+
+.trend p{
+    letter-spacing: 2px;
+}
+
+.trending h3{
+    margin: 20px 10px;
+}
+
+.trending button{
+    border: none;
+    background: none;
+    color: var(--blue);
+    font-size: 16px;
+    padding: 20px 10px;
+    cursor: pointer;
+}
+
+
+
+.profile-box {
+
+    display: flex;
+    margin-top: 1.5rem;
+    margin-right:12rem;
+    padding: 1rem;
+    padding-left:0;
+    width:30%;
+
+  }
+  .profile-box:hover {
+    background: #e7e7e8;
+    border-radius: 500px;
+    cursor: pointer;
+  }
+  
+  .profile-box img {
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 100%;
+
+  }
+  
+  .profile-box .full-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  .profile-box .options-icon .fa-option {
+    color: grey;
+    margin-left: 1rem;
+    margin-top: 40%;
+  }
+
+
+  .user-name {
+    color: #39393a;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1rem;
+  }
+
+  
+.user-content-box .user-names {
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  .user-names .full-name {
+    padding-right: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgb(20, 23, 26);
+  }
+  .user-names .user-name {
+    padding-right: 10px;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: rgb(101, 119, 134);
+  }
+
+  .user-names i {
+    padding-top: 0.6rem;
+    margin-left: 50%;
+    color: rgb(101, 119, 134);
+  
+  }
+
+  .user-name .sub-text {
+    font-size: 17px;
+    color: rgb(101, 119, 134);
+  }
+
+  .left_part--top{
+    margin-right:-500px;
+ }
+
+ /* third part  */
+
+
+  
+.trends {
+    background:  rgba(0, 0, 0, 0.068);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border:none;
+  }
+  .trends .header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgb(230, 236, 240);
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgb(230, 236, 240);
+  }
+
+  
+/* Trending Nav Items */
+.nav-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid rgb(230, 236, 240);
+  }
+  .nav-list:hover {
+    background: rgba(0, 0, 0, 0.03);
+    cursor: pointer;
+  }
+  .nav-list a {
+      color: rgb(27, 149, 224);
+  }
+  .nav-list:last-child {
+    font-size: 1rem;
+    border-bottom: none;
+  }
+
+  
+.header h2 {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+  
+  .header i {
+    color: rgba(29,161,242,1.00);
+    background: rgb(245, 248, 250);
+    padding: 0.5rem;
+    border-radius: 50%
+  }
+  .header i:hover {
+    background: rgba(29, 161, 242, 0.1);
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .trend-list {
+    display: flex;
+    flex-flow: column nowrap;
+    
+  }
+  
+  .sub-text {
+    font-size: 13px;
+    color: rgb(101, 119, 134);
+  }
+
+  .main-text {
+    font-size: 15px;
+    color: rgb(20, 23, 26);
+  }
+
+  .follow-header .main-text {
+    font-size: 19px;
+
+  }
+
+  .nav-list .trend-icon {
+    font-size: 13px;
+    color:  rgb(101, 119, 134);
+  }
+
+
+  .who_to_follow {
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.068);
+    margin-top: 20px;
+    border-radius: 10px;
+   
+}
+.who_to_follow h1{
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.celeb:hover{
+  background-color: rgb(234, 231, 231);
+ 
+}
+
+.celeb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.celeb span{
+  font-size: .8rem;
+  font-weight: 100;
+}
+
+
+.celeb_pic_div{
+  display: flex;
+  gap: 1rem;
+}
+
+.profile_img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.btn_follow {
+  padding: .7rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  background-color: rgb(39, 38, 38);
+  color: white;
+  font-weight: bold;
+}
+
+
+.to_follow{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin:0 auto;
+}
+
+.footer-links {
+  display: flex;
+  width:70%;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  line-height: 1.5;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+  color:blue;
+}
+.footer-links i {
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+.footer-links i:hover {
+    background: rgb(245, 248, 250);
+    padding: 0.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.footer-copyright:hover {
+ text-decoration:underline;
+ color:blue;
+ cursor:pointer;
+
+}
+
+.hash_tag{
+  color:rgb(29, 155, 240);
+}
+
+.hash_tag:hover{
+  text-decoration: underline;
+}

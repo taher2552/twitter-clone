@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/index.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="wrapper">
+          <section id="left_part" class="fixed__side">
+            <div class="left_part--top">
+                <div class="menu__icon logo">
+                    <a href="#">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="menu__icon for_hover active">
+                    <a href="#">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="fas fa-hashtag"></i>
+                        Explore
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="far fa-bell"></i>
+                        Notifications
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="far fa-envelope"></i>
+                        Message
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="far fa-bookmark"></i>
+                        Bookmark
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="far fa-list-alt"></i>
+                        List
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="far fa-user"></i>
+                        Profile
+                    </a>
+                </div>
+                <div class="menu__icon for_hover">
+                    <a href="#">
+                        <i class="fas fa-ellipsis-h"></i>
+                        More
+                    </a>
+                </div>
+                <button id="tweet">Tweet</button>
+                <div class="profile-pic">
+                  <div class="profile-box">
+                    <img src="./images/profile_img.jpg" alt="">
+                    <div class="profile-link">
+                      <p class="full-name">Taher Rang</p>
+                      <p class="user-name">@taher2552</p>
+                    </div>
+                    <div class="options-icon"><i style="font-size:16px" class="fa fa-option">&#xf141;</i></div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content">
+          <div class="header">
+            <h1>Home</h1>
+            <button>
+              <img src="./images/stars.svg" alt=""/>
+            </button>
+          </div>
+          <div class="post-box">
+            <div class="post-box-image">
+              <img
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                alt="profile image"
+              />
+              <textarea placeholder="What's happening?" class="tweet-post-text"></textarea>
+            </div>
+            <div class="post-box-tweet">
+              <div class="inp-btns">
+                <button>
+                  <img src="./images/image-icon.svg" alt="add image" />
+                </button>
+                <button>
+                  <img src="./images/gif-icon.svg" alt="add gif" />
+                </button>
+                <button>
+                  <img src="./images/poll-icon.svg" alt="add poll" />
+                </button>
+                <button>
+                  <img src="./images/emoji-icon.svg" alt="add emoji" />
+                </button>
+                <button>
+                  <img src="./images/calendar-icon.svg" alt="add date" />
+                </button>
+              </div>
+              <button class="tweet-post-btn">
+                Tweet
+              </button>
+
+            </div>
+          </div>
+          <div id="tweet-body">
+            <!-- <div class="tweets">
+              <div class="tweet-profile-image">
+                <img
+                  src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                  alt="profile image"
+                />
+              </div>
+              <div class="tweet">
+                <div class="tweet-header">
+                  <div class="tweet-user-info">
+                    <p><strong>Rohan Roshan</strong></p>
+                    <p>@rohanroshan</p>
+                    <p>19 Dec, 2022</p>
+                  </div>
+                  <div class="tweet-three-dots-menu">
+                    <button>
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          fill="#5b7083"
+                          d="M16.5 10.25c-.965 0-1.75.787-1.75 1.75s.784 1.75 1.75 1.75c.964 0 1.75-.786 1.75-1.75s-.786-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75zm-4.5-2.5c-.966 0-1.75.787-1.75 1.75s.785 1.75 1.75 1.75 1.75-.786 1.75-1.75-.784-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75zm-4.5-2.5c-.965 0-1.75.787-1.75 1.75s.785 1.75 1.75 1.75c.964 0 1.75-.786 1.75-1.75s-.787-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75z"
+                        ></path>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="tweet-body">
+                  <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima hic praesentium minus! Earum vero, nulla quam corrupti laudantium sequi aperiam rerum, temporibus alias nostrum veniam delectus officiis et? Voluptatum, qui!
+                  </span>
+                  <div class="tweet-image">
+                    <img
+                      src="https://images.pexels.com/photos/3225529/pexels-photo-3225529.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+          <!-- <button class="show_more">Show More</button> -->
+        </div>
+
+        <div class="third_part">
+          <div class="search_box">
+            <i class="fa fa-search" style="font-size:24px"></i>
+            <input type="search" name=""  id="search" placeholder="search twitter">
+          </div>
+    
+          <div class="trends">
+            <ul>
+              <li class="nav-list header">
+                <h2>What's happening</h2>
+              <li class="nav-list">
+                <div class="trend-list">
+                  <p class="sub-text">Entertainment . Trending</p>
+                  <p class="main-text hash_tag">#Tiger3</p>
+                  <p class="sub-text">Trending with <span class="hash_tag"> #YRFSpyUniverse</span></p>
+                </div>
+                <div class="trend-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="trend-list">
+                  <p class="sub-text">Trending in India</p>
+                  <p class="main-text hash_tag">#ShahrukhKhan</p>
+                  <p class="sub-text">Trending with <span class="hash_tag">#Pathaan</span></p>
+                </div>
+                <div class="trend-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="trend-list">
+                  <p class="sub-text">Sports. Trending</p>
+                  <p class="main-text hash_tag">#RishabhPant</p>
+                  <p class="sub-text">1,549 Tweets</p>
+                </div>
+                <div class="trend-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="trend-list">
+                  <p class="sub-text">Trending in India</p>
+                  <p class="main-text hash_tag">#RohitShetty</p>
+                  <p class="sub-text">Trending with <span class="hash_tag">#singhamAgain</span></p>
+                </div>
+                <div class="trend-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </li>
+              <li class="nav-list">
+                <div class="trend-list">
+                  <p class="sub-text">Sports . Trending</p>
+                  <p class="main-text hash_tag">#IndvsSl</p>
+                  <p class="sub-text">144K Tweets</p>
+                </div>
+                <div class="trend-icon">
+                  <i class="fas fa-chevron-down"></i>
+                </div>
+              </li>
+              
+              
+              <li class="nav-list"><a href="#">Show more</a></li>
+            </ul>
+          </div>
+
+
+          <div class="who_to_follow">
+            <h1>Who to follow</h1>
+            <div class="celeb">
+                <div class="celeb_pic_div">
+                    <img src="./images/profile_img1.jpg" alt="" class="profile_img">
+                    <div class="to_follow"><h3 class="celeb_name">Abhay Mahajan </h3>
+                      <div>@beabhaymahajan</div></div>
+                </div>
+                <button class="btn_follow">Follow</button>
+            </div>
+            <div class="celeb">
+                <div class="celeb_pic_div">
+                    <img src="./images/profile_img2.jpg" alt="" class="profile_img">
+                    <div class="to_follow"><h3 class="celeb_name">Code Chef </h3>
+                      <div>@codechef</div></div>
+                </div>
+                <button class="btn_follow">Follow</button>
+            </div>
+            <div class="celeb">
+                <div class="celeb_pic_div">
+                    <img src="./images/profile_img3.jpg" alt="" class="profile_img">
+                    <div class="to_follow"><h3 class="celeb_name">Salman Khan Fan Club </h3>
+                      <div>@SalmanFC_com</div></div>
+                </div>
+                <button class="btn_follow">Follow</button>
+            </div>
+            <div class="nav-list"><a href="#">Show more</a></div>
+        </div>
+    
+          <div class="right-footer">
+            <div class="footer-links">
+              <a href="#" class="sub-text">Terms of Services</a>
+              <a href="#" class="sub-text">Privacy policy</a>
+              <a href="#" class="sub-text">Cookies Policy</a>
+              <a href="#" class="sub-text">Accessibility</a>
+              <a href="#" class="sub-text">Ads info</a>
+              <a href="#" class="sub-text">More...</a>
+            </div>
+            <div class="footer-copyright">
+              <p class="sub-text">&copy; 2023 Twitter, Inc.</p>
+            </div>
+    
+          </div>
+
+        </div>
+      </div>
+
+      
+    <script src="./scripts/index.js"></script>
+    </body>
+</html>
