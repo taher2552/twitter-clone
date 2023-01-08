@@ -32,14 +32,13 @@ async function getTweetsAndInsertHTML() {
                 <p>${date.toDateString()}</p>
                 </div>
                 <div class="tweet-three-dots-menu">
-                <button data-id=${tweet._id} class="tweet-edit" id="tweet-edit">
-                    Edit
-                </button>
-                <button data-id=${tweet._id} class="tweet-delete" id="tweet-delete">
-                    Delete
-                </button>
+
+                <div class="options-icon"><i style="font-size:16px" class="fa fa-option three_dots">&#xf141;</i></div>
+                <ul class="options_edit_delete hidden">
+    <li data-id=${tweet._id} class="tweet-edit" id="tweet-edit">  Edit</li>
+    <li data-id=${tweet._id} class="tweet-delete " id="tweet-delete">  Delete</li>
+</ul>
                 <button>
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path
                         fill="#5b7083"
                         d="M16.5 10.25c-.965 0-1.75.787-1.75 1.75s.784 1.75 1.75 1.75c.964 0 1.75-.786 1.75-1.75s-.786-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75zm-4.5-2.5c-.966 0-1.75.787-1.75 1.75s.785 1.75 1.75 1.75 1.75-.786 1.75-1.75-.784-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75zm-4.5-2.5c-.965 0-1.75.787-1.75 1.75s.785 1.75 1.75 1.75c.964 0 1.75-.786 1.75-1.75s-.787-1.75-1.75-1.75zm0 2.5c-.414 0-.75-.336-.75-.75 0-.413.337-.75.75-.75s.75.336.75.75c0 .413-.336.75-.75.75z"
@@ -61,6 +60,16 @@ async function getTweetsAndInsertHTML() {
 window.onload = async () => {
     getTweetsAndInsertHTML();
 }
+
+document.getElementById('tweet-body').addEventListener('click', (e)=>{
+    if(e.target.classList.contains('three_dots')){
+     console.log(e.path[2].querySelector('ul').classList.toggle('hidden'));
+    }
+})
+
+
+
+
 
 document.addEventListener('click', async (event) => {
     if(event.target.classList.contains('tweet-post-btn')) {
