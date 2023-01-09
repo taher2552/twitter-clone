@@ -1012,7 +1012,7 @@ svg{
     grid-template-columns: auto;
   }
 
-  .content, .tweets{
+  .content, .tweets, .header, .post-box{
     width:80%;
     margin: 0 auto;
   }
