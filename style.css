@@ -608,4 +608,33 @@ svg{
   text-decoration: underline;
 }
 
+.tweet_icons{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+ 
+}
+
+.gap_between{
+  margin-left: 50px;
+}
+
+.fa-comment{
+  margin-left: 0px;
+}
+
+.fa-comment:hover, .fa-upload:hover{
+  cursor: pointer;
+  color:blue;
+}
+
+.fa-heart:hover{
+  cursor:pointer;
+  color:red;
+}
+.fa-retweet:hover{
+  cursor:pointer;
+  color:green;
+}
+
 

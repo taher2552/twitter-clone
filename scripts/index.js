@@ -50,6 +50,14 @@ async function getTweetsAndInsertHTML() {
             <div class="tweet-body">
                 <span id='span-${tweet._id}'>${tweet.title}
                 </span>
+            
+            </div>
+            <div class="tweet_icons">
+            <i class='far fa-comment gap_between'>109</i>
+            <i class="fas fa-retweet green gap_between"> 865</i>
+            <i class="far fa-heart red gap_between">1.6k</i>
+            <i class="fa fa-upload gap_between" aria-hidden="true"></i>
+
             </div>
             </div>
         </div>`
