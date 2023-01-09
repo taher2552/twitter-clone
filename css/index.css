@@ -288,7 +288,9 @@
 /* third section css starts here  */
 
 .third_part{
-    width:100%;
+    position: fixed;
+    top:0;
+    right:0;
 }
 
 .search_wrapper{

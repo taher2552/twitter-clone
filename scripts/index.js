@@ -20,7 +20,7 @@ async function getTweetsAndInsertHTML() {
         return `<div id=${tweet._id} class="tweets">
             <div class="tweet-profile-image">
             <img
-                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=751&q=80"
+                src="./images/profile_img.jpg"
                 alt="profile image"
             />
             </div>
@@ -53,7 +53,7 @@ async function getTweetsAndInsertHTML() {
             
             </div>
             <div class="tweet_icons">
-            <i class="fa fa-bar-chart gap_between">6,387</i>
+            <i class="fa fa-bar-chart gap_between"> 6,387</i>
             <i class='far fa-comment gap_between'>109</i>
             <i class="fas fa-retweet green gap_between"> 865</i>
             <i class="far fa-heart red gap_between">1.6k</i>
