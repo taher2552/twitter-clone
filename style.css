@@ -612,6 +612,7 @@ svg{
   margin-top: 10px;
   margin-bottom: 10px;
   display: flex;
+  color:grey;
  
 }
 
@@ -619,11 +620,11 @@ svg{
   margin-left: 50px;
 }
 
-.fa-comment{
+.fa-bar-chart{
   margin-left: 0px;
 }
 
-.fa-comment:hover, .fa-upload:hover{
+.fa-comment:hover, .fa-upload:hover, .fa-bar-chart:hover{
   cursor: pointer;
   color:blue;
 }
@@ -636,5 +637,6 @@ svg{
   cursor:pointer;
   color:green;
 }
+
 
 

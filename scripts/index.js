@@ -27,8 +27,8 @@ async function getTweetsAndInsertHTML() {
             <div class="tweet">
             <div class="tweet-header">
                 <div class="tweet-user-info">
-                <p><strong>Rohan Roshan</strong></p>
-                <p>@rohanroshan</p>
+                <p><strong>Taher Rang</strong></p>
+                <p>@taher2552</p>
                 <p>${date.toDateString()}</p>
                 </div>
                 <div class="tweet-three-dots-menu">
@@ -53,6 +53,7 @@ async function getTweetsAndInsertHTML() {
             
             </div>
             <div class="tweet_icons">
+            <i class="fa fa-bar-chart gap_between">6,387</i>
             <i class='far fa-comment gap_between'>109</i>
             <i class="fas fa-retweet green gap_between"> 865</i>
             <i class="far fa-heart red gap_between">1.6k</i>
