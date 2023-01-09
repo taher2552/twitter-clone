@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root{
+    --blue: #147df5;
+    --light-blue: #e7e7e8;
+}
+
+a{
+    text-decoration: none;
+}
+
+
 
 .wrapper {
     display: grid;
@@ -21,29 +35,7 @@
     margin-top: -10px;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 50px;
-    border: 1px solid rgb(235, 238, 240);;
-}
 
-.header h1 {
-    padding: 10px;
-    font-family: 'arial';
-    font-size: 20px;
-}
-
-.header button {
-    height: 35px;
-    width: 35px;
-    background: transparent;
-    border: transparent;
-    border-radius: 50%;
-    margin-right: 10px;
-}
 
 .logo {
     height: 40px;
@@ -51,48 +43,6 @@
     margin-bottom: 15px;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-item {
-    display: flex;
-    flex-direction: row;
-    height: 30px;
-    width: 30px;
-    margin-bottom: 10px;
-    border-radius: 50%;
-    padding: 5px 5px;
-}
-
-.nav-item:hover {
-    background: rgba(218, 114, 29, 0.1);
-}
-
-.nav-item:hover svg {
-    fill: rgb(29, 161, 242);
-}
-
-.tweet-btn {
-    height: 50px;
-    width: 50px;
-    background: rgb(29, 161, 242);
-    border-radius: 50%;
-    padding: 10px;
-    box-sizing: border-box;
-}
-
-.profile-pic img{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    margin-left: 30px;
-    margin-top: 40px;
-}
 
 .post-box {
     border: 1px solid rgb(235, 238, 240);
@@ -287,11 +237,10 @@
 
 /* third section css starts here  */
 
-/* .third_part{
-    position: fixed;
-    top:0;
-    right:0;
-} */
+.third_part{
+    height:max-content;
+
+}
 
 .search_wrapper{
     margin:10px;
@@ -309,10 +258,9 @@
     margin-top: 5px;
 
     margin-left: 46px;
-
+     position: sticky;
     margin:10px;
     padding-bottom: 1rem;
-    position: sticky;
     top:0;
     z-index: 1000;
 
@@ -358,24 +306,6 @@ button{
 }
 
 
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-:root{
-    --blue: #147df5;
-    --light-blue: #e7e7e8;
-}
-
-a{
-    text-decoration: none;
-}
 
 
 /* login page css */
@@ -509,7 +439,7 @@ svg{
     font-size: 30px;
 }
 
-.menu__icon{
+.menu_list{
     font-size: 20px;
     font-weight: 600;
     width: fit-content;
@@ -517,7 +447,7 @@ svg{
     margin: 10px;
 }
 
-.menu__icon.active a{
+.menu_list.active a{
     color: var(--blue);
 }
 
@@ -543,21 +473,21 @@ svg{
   
 }
 
-.menu__icon:hover a{
+.menu_list:hover a{
     color: var(--blue);
 }
 
-.menu__icon a{
+.menu_list a{
     color: black;
 }
 
-.menu__icon i{
+.menu_list i{
     margin-right: 10px;
 }
 
 
 
-.menu__icon:hover .fa-ellipsis-h{
+.menu_list:hover .fa-ellipsis-h{
     border: 3px solid var(--blue);
 }
 
@@ -773,8 +703,8 @@ svg{
     margin: 0 auto;
     margin-top: 1rem;
     border:none;
-    position:sticky;
-    top:-15rem;
+    position: sticky;
+    top:4rem;
 
   }
 
@@ -864,12 +794,15 @@ svg{
     background-color: #e7e7e8;
     margin-top: 20px;
     border-radius: 10px;
+
    
 }
 .who_to_follow h1{
     font-size: 1.3rem;
     padding: 1rem;
 }
+
+
 
 .celeb:hover{
   background-color: rgb(234, 231, 231);
