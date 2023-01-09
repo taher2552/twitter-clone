@@ -995,15 +995,36 @@ svg{
   color:green;
 }
 
+
+
 @media screen and (max-width: 1300px){
     svg{
         left:15%
     }
+    .third_part{
+        display: none;
+    }
+  #left_part{
+    display: none;
+  }
+
+  .wrapper {
+    grid-template-columns: auto;
+  }
+
+  .content, .tweets{
+    width:80%;
+    margin: 0 auto;
+  }
+
 }
 @media screen and (max-width: 950px){
     svg{
         left:5%;
     }
+
+
+   
 }
 @media screen and (max-width: 750px){
        .sign_in_google, .sign_in_apple{
@@ -1011,6 +1032,8 @@ svg{
          text-align: center;
          margin-left:-20px;
     }
+
+
 }
 @media screen and (max-width: 500px){
        .sign_in_google, .sign_in_apple{
@@ -1018,6 +1041,7 @@ svg{
          text-align: center;
          margin-left:-50px;
     }
+
 }
 @media screen and (max-width: 360px){
        .sign_in_google, .sign_in_apple{
