@@ -164,9 +164,10 @@ a{
     display: flex;
     flex-direction: column;
     margin-right: 10px;
-    color:green;
-    text-align: center;
+
 }
+
+
 
 .tweet-user-info {
     display: flex;
@@ -939,7 +940,7 @@ svg{
 
 .right-footer{
   position: sticky;
-  top:550px;
+  top:580px;
 }
 
 
