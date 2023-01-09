@@ -440,11 +440,11 @@ svg{
 }
 
 .menu_list{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     width: fit-content;
     border-radius: 50px;
-    margin: 10px;
+    margin: 5px;
 }
 
 .menu_list.active a{
